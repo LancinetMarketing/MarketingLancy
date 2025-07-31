@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos – Lancinet Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+    <h1 class="text-2xl font-bold">Lancinet<span class="text-indigo-500">Marketing</span></h1>
+    <nav class="space-x-6 text-gray-300 hidden md:flex">
+      <a href="index.html" class="hover:text-white">Accueil</a>
+      <a href="offres.html" class="hover:text-white">Offres</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden px-6 py-4 space-y-2 bg-gray-900 text-gray-300 hidden">
+    <a href="index.html" class="block hover:text-white">Accueil</a>
+    <a href="offres.html" class="block hover:text-white">Offres</a>
+    <a href="contact.html" class="block hover:text-white">Contact</a>
+  </div>
+
+  <!-- Content -->
+  <main class="py-20 px-6 max-w-4xl mx-auto text-left space-y-8">
+    <h2 class="text-4xl font-bold text-center mb-4">À propos de Lancinet Marketing</h2>
+
+    <p class="text-gray-400 text-lg">
+      Lancinet Marketing est née d’une vision claire : accompagner les entrepreneurs et les petites entreprises vers la réussite grâce à une stratégie marketing personnalisée, moderne et humaine.
+    </p>
+
+    <p class="text-gray-400 text-lg">
+      Derrière cette initiative se cache une équipe passionnée par le digital, le design et la stratégie commerciale. Lancinet, fondateur de l’agence, a démarré son parcours dans le marketing terrain avant de se spécialiser dans le digital. Confronté lui-même aux difficultés de croissance des petites structures, il a compris qu’un accompagnement sur mesure était indispensable pour performer dans un marché saturé.
+    </p>
+
+    <p class="text-gray-400 text-lg">
+      Depuis plusieurs années, nous avons accompagné des dizaines d’entrepreneurs, de freelances, de coaches et de TPE à mieux structurer leur communication, à générer des leads qualifiés et à convertir grâce à des tunnels de vente optimisés. Notre approche repose sur 3 piliers :
+    </p>
+
+    <ul class="list-disc list-inside text-gray-300 text-lg">
+      <li><strong>Authenticité :</strong> Mettre en avant l’identité unique de chaque projet.</li>
+      <li><strong>Performance :</strong> Créer des stratégies orientées résultats concrets.</li>
+      <li><strong>Pédagogie :</strong> Expliquer, transmettre et rendre le marketing accessible.</li>
+    </ul>
+
+    <p class="text-gray-400 text-lg">
+      Chez Lancinet Marketing, vous n’êtes pas un client parmi d’autres. Vous êtes un partenaire, et votre réussite est aussi la nôtre. Notre but n’est pas de vous vendre du rêve, mais de construire des fondations solides pour un business durable.
+    </p>
+
+    <p class="text-gray-400 text-lg">
+      Si vous avez un projet, une idée ou simplement l’envie de structurer votre présence en ligne, nous sommes là pour vous accompagner pas à pas, avec bienveillance, professionnalisme et détermination.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
+    © 2025 Lancinet Marketing. Tous droits réservés.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
